@@ -1,0 +1,112 @@
+<!--
+// THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+// © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <fieldset class="form-group" id="personal-info">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" placeholder="Your name" id="name" required autocomplete="off">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" placeholder="Your email" id="email" required autocomplete="off">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" placeholder="Your age" min=10 max=99 id="number" autocomplete="off">
+            </fieldset>
+            <fieldset class="form-group" id="role">
+                <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" required>
+                    <option value="" disabled selected>Your role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group" id="recommend">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <input id="definitely" name="recommend" value="definitely" type="radio" checked />
+                <label for="definitely">Definitely</label>
+                <br>
+                <input id="maybe" name="recommend" value="maybe" type="radio" />
+                <label for="maybe">Maybe</label>
+                <br>
+                <input id="not-sure" name="recommend" value="not-sure" type="radio" />
+                <label for="not-sure">Not sure</label>
+            </fieldset>
+            <fieldset class="form-group" id="improved">
+                <p>What would you like to see improved?</p>
+                <input id="front-end-projects" name="prefer" value="front-end-projects" type="checkbox" />
+                <label for="front-end-projects">Front-end Projects</label>
+                <br>
+                <input id="back-end-projects" name="prefer" value="back-end-projects" type="checkbox" />
+                <label for="back-end-projects">Back-end Projects</label>
+                <br>
+                <input id="data-visualization" name="prefer" value="data-visualization" type="checkbox" />
+                <label for="data-visualization">Data Visualization</label>
+                <br>
+                <input id="challenges" name="prefer" value="challenges" type="checkbox" />
+                <label for="challenges">Challenges</label>
+                <br>
+                <input id="open-source-community" name="prefer" value="open-source-community" type="checkbox" />
+                <label for="open-source-community">Open Source Community</label>
+                <br>
+                <input id="gitter-help-rooms" name="prefer" value="gitter-help-rooms" type="checkbox" />
+                <label for="gitter-help-rooms">Gitter help rooms</label>
+                <br>
+                <input id="videos" name="prefer" value="videos" type="checkbox" />
+                <label for="videos">Videos</label>
+                <br>
+                <input id="city-meetups" name="prefer" value="city-meetups" type="checkbox" />
+                <label for="city-meetups">City Meetups</label>
+                <br>
+                <input id="wiki" name="prefer" value="wiki" type="checkbox" />
+                <label for="wiki">Wiki</label>
+                <br>
+                <input id="forum" name="prefer" value="forum" type="checkbox" />
+                <label for="forum">Forum</label>
+                <br>
+                <input id="additional-courses" name="prefer" value="additional-courses" type="checkbox" />
+                <label for="additional-courses">Additional Courses</label>
+            </fieldset>
+            <fieldset class="form-group" id="comment">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comment" cols="30" rows="10" placeholder="Your comment"
+                    autocomplete="off"></textarea>
+            </fieldset class="form-group">
+            <fieldset class="form-group" id="button-submit">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </fieldset>
+        </form>
+    </main>
+
+    <p class="copyright">
+        © 2022 Copyright <a class="copyright-link" href="https://github.com/mehmetguduk" target="_blank">Mehmet
+            Güdük</a> All Rights Reserved
+    </p>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
